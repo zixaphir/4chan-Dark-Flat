@@ -1,0 +1,87 @@
+<html>
+<head>
+    <style>
+        body
+        {
+            background:#333;
+            color:#fff;
+        }
+        div
+        {
+            margin:2em 0;
+        }
+        input,select
+        {
+            background:rgba(40,40,40,0.9);
+            border:none;
+            color:#fff;
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            -o-appearance:none;
+            -webkit-transition:all .1s ease-in-out;
+            -moz-transition:all .1s ease-in-out;
+            -o-transition:all .1s ease-in-out;
+        }
+        input[type=file]::-webkit-file-upload-button
+        {
+            -webkit-appearance:none;
+            background:rgba(40,40,40,0.9)!important;
+            border:none!important;
+            border-right:1px solid #333!important;
+            color:#fff;
+        }
+        input[type=file]>input[type=button]
+        {
+            -webkit-appearance:none;
+            background:rgba(40,40,40,0.9)!important;
+            border:none!important;
+            border-right:1px solid #333!important;
+            color:#fff;
+        }
+        input[type=checkbox]
+        {
+            -webkit-appearance:button!important;
+            -moz-appearance:none;
+            -o-appearance:none;
+            width:12px!important;
+            height:12px!important;
+            cursor:pointer!important;
+            border:1px solid #3c3c3c!important;
+            background:rgba(20,20,20,0.9)!important;
+            border-radius:3px!important;
+            -o-border-radius:3px!important;
+        }
+        input[type=checkbox]:hover
+        {
+            background:rgba(33,33,33,0.9)!important;
+        }
+        input[type=checkbox]:checked
+        {
+            border:1px solid #1f1f1f!important;
+            background:rgba(180,180,180,0.6)!important;
+            box-shadow:#eee 0 0 2px;
+            -moz-box-shadow:#eee 0 0 2px;
+        }
+        input[type=checkbox]:active
+        {
+            background:rgba(255,255,255,0.6)!important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>Checkbox Test: <input type="checkbox" /></label>
+    </div>
+    <div>
+        <label>Select Test:
+            <select>
+                <option>Test</option>
+                <option>Test</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>File Test: <input type="file" /></label>
+    </div>
+</body>
+</html>
